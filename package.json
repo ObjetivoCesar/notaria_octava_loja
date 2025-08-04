@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:cpanel": "vite build --base=./ && node scripts/fix-asset-paths.js",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare:cpanel": "npm run build:cpanel && node scripts/prepare-cpanel.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",

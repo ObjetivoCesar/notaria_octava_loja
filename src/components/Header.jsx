@@ -17,8 +17,8 @@ const Header = () => {
   ]
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
-      <nav className="container-max flex items-center justify-between py-4">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/100 backdrop-blur-sm border-b border-border">
+      <nav className="container-max flex items-center justify-between h-20 px-4">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-3">
           <img 
@@ -130,7 +130,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="lg:hidden bg-card border-t border-border">
+        <div className="lg:hidden bg-background border-t border-border fixed left-0 right-0 top-20 h-[calc(100vh-5rem)] overflow-y-auto z-40">
           <div className="px-6 py-4 space-y-4">
             <Link 
               to="/" 

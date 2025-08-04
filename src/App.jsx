@@ -14,8 +14,11 @@ import Vehiculos from './pages/servicios/Vehiculos'
 import DeclaracionesYOtros from './pages/servicios/DeclaracionesYOtros'
 
 function App() {
+  // Determinar el basename basado en el entorno
+  const basename = import.meta.env.BASE_URL || '/';
+  
   return (
-    <Router>
+    <Router basename={basename}>
       <div className="min-h-screen bg-background text-foreground">
         <ScrollToTop />
         <Header />
