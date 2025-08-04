@@ -600,7 +600,8 @@ const Vehiculos = () => {
         </div>
       </section>
 
-                    {activeTab === 'prenda' && (
+                  <AnimatePresence mode="wait">
+                    {activeTab === 'prenda' ? (
                       <motion.div
                         key="prenda"
                         initial={{ opacity: 0, x: 20 }}
@@ -632,11 +633,7 @@ const Vehiculos = () => {
                           </div>
                         </div>
                       </motion.div>
-                    )}
-
-
-
-                    {activeTab === 'otros' && (
+                    ) : activeTab === 'otros' ? (
                       <motion.div
                         key="otros"
                         initial={{ opacity: 0, x: 20 }}
@@ -654,7 +651,7 @@ const Vehiculos = () => {
                           </div>
                         </div>
                       </motion.div>
-                    )}
+                    ) : null}
                   </AnimatePresence>
                 </div>
               </div>
