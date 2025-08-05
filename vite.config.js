@@ -20,5 +20,14 @@ export default defineConfig(({ command }) => ({
   server: {
     port: 3000,
     open: true,
+    historyApiFallback: true,
+    proxy: {
+      // Configuración para manejar rutas en desarrollo
+      '^/servicios/.*': {
+        target: 'http://localhost:3000',
+        changeOrigin: true,
+        rewrite: (path) => '/index.html',
+      },
+    },
   },
 }))

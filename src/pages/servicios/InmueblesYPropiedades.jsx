@@ -12,26 +12,36 @@ const InmueblesYPropiedades = () => {
       title: 'Compraventa',
       icon: <FileText className="h-5 w-5 mr-2" />,
       subtitle: 'Compraventa de Bienes Inmuebles',
-      description: 'Formalizamos la compraventa de tu casa, terreno o departamento en Loja a través de una escritura pública, el único documento que te acredita como propietario legítimo.',
+      description: 'Tu Guía para una Transacción Segura en Loja',
       content: (
-        <>
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-10 h-10 rounded-full bg-red-100 text-red-700 flex items-center justify-center font-bold">1</div>
-            <h3 className="text-xl font-bold text-gray-900">Seguridad para tu Inversión</h3>
-          </div>
-          
-          <p className="text-gray-700 mb-6">
-            Este es el trámite más importante para asegurar tu inversión, protegiendo tanto al comprador como al vendedor. Nos encargamos de que el proceso sea transparente, claro y seguro.
+        <div className="space-y-6">
+          <h3 className="text-2xl font-bold text-gray-900">Compraventa de Bienes Inmuebles: Tu Guía para una Transacción Segura en Loja</h3>
+          <p className="text-gray-700">
+            Este es el trámite más importante para asegurar tu patrimonio. La escritura pública de compraventa es el único documento que te acredita como propietario legítimo de una casa, terreno o departamento. En la Notaría Octava, garantizamos un proceso transparente que protege tanto al comprador como al vendedor.
           </p>
           
-          <a 
-            href="/servicios/compraventa-inmuebles" 
-            className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-700 hover:bg-red-800 transition-colors duration-200"
-          >
-            Conocer el Proceso de Compraventa
-            <FileText className="ml-2 h-5 w-5" />
-          </a>
-        </>
+          <div className="bg-gray-50 p-6 rounded-lg">
+            <h4 className="text-xl font-semibold text-gray-900 mb-3">Beneficios de realizar la compraventa en notaría:</h4>
+            <ul className="list-disc pl-5 text-gray-700 space-y-2">
+              <li><strong>Seguridad Jurídica:</strong> Te brinda la certeza de que la propiedad está libre de problemas legales.</li>
+              <li><strong>Prevención de Fraudes:</strong> Verificamos la identidad de las partes y la legalidad de los documentos.</li>
+              <li><strong>Validez Absoluta:</strong> La escritura pública es el requisito indispensable para inscribir la propiedad a tu nombre en el Registro de la Propiedad de Loja.</li>
+            </ul>
+          </div>
+
+          <div className="mt-6">
+            <h4 className="text-lg font-semibold text-gray-900 mb-3">Requisitos Indispensables:</h4>
+            <ul className="list-disc pl-5 text-gray-700 space-y-1">
+              <li><strong>Del Vendedor:</strong> Cédula y certificado de votación, escritura anterior de la propiedad, pago del impuesto predial del año en curso.</li>
+              <li><strong>Del Comprador:</strong> Cédula y certificado de votación.</li>
+              <li><strong>Del Inmueble:</strong> Certificado de Gravámenes actualizado del Registro de la Propiedad.</li>
+            </ul>
+          </div>
+
+          <button className="mt-6 bg-red-700 hover:bg-red-800 text-white font-medium py-2 px-6 rounded transition duration-300">
+            Iniciar Trámite de Compraventa
+          </button>
+        </div>
       )
     },
     {
@@ -39,26 +49,41 @@ const InmueblesYPropiedades = () => {
       title: 'Hipotecas',
       icon: <Scale className="h-5 w-5 mr-2" />,
       subtitle: 'Constitución y Cancelación de Hipotecas',
-      description: 'Gestionamos el trámite para que tu propiedad quede debidamente registrada o libre de gravámenes.',
+      description: 'Te acompañamos en los dos momentos clave de una hipoteca',
       content: (
-        <>
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-10 h-10 rounded-full bg-red-100 text-red-700 flex items-center justify-center font-bold">2</div>
-            <h3 className="text-xl font-bold text-white">Tranquilidad en tus Finanzas</h3>
-          </div>
-          
-          <p className="text-white mb-6">
-            Ya sea que necesites registrar una hipoteca en Loja para obtener un crédito bancario, o que finalmente hayas terminado de pagar tu deuda y necesites la cancelación de la hipoteca para liberar tu propiedad, nosotros te guiamos en ambos procesos.
+        <div className="space-y-6">
+          <h3 className="text-2xl font-bold text-gray-900">Constitución y Cancelación de Hipotecas en Loja</h3>
+          <p className="text-gray-700">
+            Te acompañamos en los dos momentos clave de una hipoteca: al solicitarla y al liberarte de ella.
           </p>
           
-          <a 
-            href="/servicios/hipotecas" 
-            className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-700 hover:bg-red-800 transition-colors duration-200"
-          >
-            Más sobre Trámites de Hipotecas
-            <Scale className="ml-2 h-5 w-5" />
-          </a>
-        </>
+          <div className="bg-gray-50 p-6 rounded-lg">
+            <h4 className="text-xl font-semibold text-gray-900 mb-3">Constitución de Hipoteca</h4>
+            <p className="text-gray-700">
+              Cuando solicitas un crédito y pones tu propiedad como garantía, el banco te pedirá formalizar una constitución de hipoteca. Nosotros nos encargamos de revisar la minuta del banco y elaborar la escritura para que puedas acceder a tu financiamiento.
+            </p>
+          </div>
+
+          <div className="bg-gray-50 p-6 rounded-lg">
+            <h4 className="text-xl font-semibold text-gray-900 mb-3">Cancelación de Hipoteca</h4>
+            <p className="text-gray-700">
+              ¡El mejor momento! Una vez que has pagado la totalidad de tu deuda, es fundamental realizar la cancelación de la hipoteca. Este trámite libera legalmente tu propiedad del gravamen, dejándola saneada para futuras ventas o simplemente para tu total tranquilidad.
+            </p>
+          </div>
+
+          <div className="mt-6">
+            <h4 className="text-lg font-semibold text-gray-900 mb-3">Requisitos Comunes:</h4>
+            <ul className="list-disc pl-5 text-gray-700 space-y-1">
+              <li>Cédula y certificado de votación.</li>
+              <li>Para constituir: Borrador de la minuta o documento del banco.</li>
+              <li>Para cancelar: Certificado de cancelación de la deuda emitido por la entidad financiera.</li>
+            </ul>
+          </div>
+
+          <button className="mt-6 bg-red-700 hover:bg-red-800 text-white font-medium py-2 px-6 rounded transition duration-300">
+            Gestionar mi Trámite de Hipoteca
+          </button>
+        </div>
       )
     },
     {
@@ -66,26 +91,40 @@ const InmueblesYPropiedades = () => {
       title: 'Partición',
       icon: <FileCheck className="h-5 w-5 mr-2" />,
       subtitle: 'Partición y Adjudicación de Bienes',
-      description: 'Evita conflictos futuros y define la propiedad de cada parte con claridad.',
+      description: 'Divide legalmente propiedades entre copropietarios',
       content: (
-        <>
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-10 h-10 rounded-full bg-red-100 text-red-700 flex items-center justify-center font-bold">3</div>
-            <h3 className="text-xl font-bold text-white">División Legal de Propiedades</h3>
-          </div>
-          
-          <p className="text-white mb-6">
-            Cuando una propiedad pertenece a varias personas (por una herencia, un divorcio o una sociedad), es necesario formalizar su división. La partición y adjudicación de bienes en Loja es el acto notarial que permite asignar a cada copropietario la parte que le corresponde de forma legal y definitiva.
+        <div className="space-y-6">
+          <h3 className="text-2xl font-bold text-gray-900">Partición y Adjudicación de Bienes</h3>
+          <p className="text-gray-700">
+            Cuando una propiedad pertenece a varias personas (por herencia, divorcio o una sociedad) y desean dividirla, el trámite de partición y adjudicación es la solución. Este acto notarial permite asignar a cada copropietario la parte que le corresponde de forma legal y definitiva.
           </p>
           
-          <a 
-            href="/servicios/particion-y-adjudicacion" 
-            className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-700 hover:bg-red-800 transition-colors duration-200"
-          >
-            Cómo Dividir una Propiedad Legalmente
-            <FileCheck className="ml-2 h-5 w-5" />
-          </a>
-        </>
+          <div className="bg-gray-50 p-6 rounded-lg">
+            <h4 className="text-xl font-semibold text-gray-900 mb-3">¿Cuándo es necesaria?</h4>
+            <ul className="list-disc pl-5 text-gray-700 space-y-1">
+              <li>Para dividir los bienes tras una disolución de la sociedad conyugal en Loja.</li>
+              <li>Para que los herederos puedan adjudicarse formalmente una propiedad.</li>
+              <li>Para poner fin a una copropiedad entre socios o hermanos.</li>
+            </ul>
+          </div>
+
+          <p className="text-gray-700">
+            Este trámite evita conflictos futuros y otorga certeza jurídica a cada uno de los dueños sobre su parte.
+          </p>
+
+          <div className="mt-6">
+            <h4 className="text-lg font-semibold text-gray-900 mb-3">Requisitos Clave:</h4>
+            <ul className="list-disc pl-5 text-gray-700 space-y-1">
+              <li>Cédulas de todos los copropietarios.</li>
+              <li>Documento que acredite la propiedad (escritura o posesión efectiva).</li>
+              <li>Acuerdo sobre cómo se realizará la división.</li>
+            </ul>
+          </div>
+
+          <button className="mt-6 bg-red-700 hover:bg-red-800 text-white font-medium py-2 px-6 rounded transition duration-300">
+            Asesoría para Partición de Bienes
+          </button>
+        </div>
       )
     },
     {
@@ -93,30 +132,37 @@ const InmueblesYPropiedades = () => {
       title: 'Promesa de Compraventa',
       icon: <FileSignature className="h-5 w-5 mr-2" />,
       subtitle: 'Seguridad en tus Acuerdos',
-      description: 'Asegura tu futura compra con un documento legalmente vinculante.',
+      description: 'Asegura tu futuro negocio inmobiliario',
       content: (
-        <>
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-10 h-10 rounded-full bg-red-100 text-red-700 flex items-center justify-center font-bold">4</div>
-            <h3 className="text-xl font-bold text-white">Reserva tu Propiedad</h3>
+        <div className="space-y-6">
+          <h3 className="text-2xl font-bold text-gray-900">Promesa de Compraventa: Asegura tu Futuro Negocio Inmobiliario</h3>
+          <p className="text-gray-700">
+            ¿Encontraste la casa ideal en Loja pero necesitas tiempo para gestionar el crédito? ¿Eres vendedor y quieres asegurar que el comprador mantenga su oferta? La promesa de compraventa notariada es un pre-contrato que obliga a ambas partes a realizar la compraventa en el futuro, respetando el precio y las condiciones pactadas.
+          </p>
+          
+          <div className="bg-gray-50 p-6 rounded-lg">
+            <h4 className="text-xl font-semibold text-gray-900 mb-3">Beneficios de una Promesa de Compraventa:</h4>
+            <ul className="list-disc pl-5 text-gray-700 space-y-2">
+              <li>"Congela" el precio y las condiciones del negocio.</li>
+              <li>Da tiempo al comprador para buscar financiamiento.</li>
+              <li>Genera una obligación legal para ambas partes, evitando que se retracten sin consecuencias.</li>
+              <li>Es el paso previo más seguro para una escritura de casa en Loja.</li>
+            </ul>
           </div>
-          
-          <p className="text-white mb-6">
-            ¿Encontraste la propiedad ideal pero aún no se cumplen todas las condiciones para la compra definitiva? La promesa de compraventa notariada "congela" el acuerdo. Es un contrato que obliga a ambas partes a realizar la compraventa en el futuro, respetando el precio y las condiciones pactadas.
-          </p>
-          
-          <p className="text-gray-700 mb-6 font-medium">
-            Es la mejor herramienta para asegurar tu futura escritura de casa en Loja.
-          </p>
-          
-          <a 
-            href="/servicios/promesa-compraventa" 
-            className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-700 hover:bg-red-800 transition-colors duration-200"
-          >
-            Asegura tu Futura Compraventa
-            <FileSignature className="ml-2 h-5 w-5" />
-          </a>
-        </>
+
+          <div className="mt-6">
+            <h4 className="text-lg font-semibold text-gray-900 mb-3">Requisitos:</h4>
+            <ul className="list-disc pl-5 text-gray-700 space-y-1">
+              <li>Cédulas de promitente vendedor y promitente comprador.</li>
+              <li>Identificación clara de la propiedad.</li>
+              <li>Precio, forma de pago, plazo y cualquier otra condición acordada.</li>
+            </ul>
+          </div>
+
+          <button className="mt-6 bg-red-700 hover:bg-red-800 text-white font-medium py-2 px-6 rounded transition duration-300">
+            Formalizar una Promesa de Compraventa
+          </button>
+        </div>
       )
     },
     {
@@ -124,30 +170,36 @@ const InmueblesYPropiedades = () => {
       title: 'Arrendamiento',
       icon: <Key className="h-5 w-5 mr-2" />,
       subtitle: 'Inscripción de Contratos de Arrendamiento',
-      description: 'Protege tus derechos como arrendador o inquilino con un contrato legalmente válido.',
+      description: 'Protege tus derechos en alquileres',
       content: (
-        <>
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-10 h-10 rounded-full bg-red-100 text-red-700 flex items-center justify-center font-bold">5</div>
-            <h3 className="text-xl font-bold text-white">Seguridad en el Alquiler</h3>
+        <div className="space-y-6">
+          <h3 className="text-2xl font-bold text-gray-900">Inscripción de Contratos de Arrendamiento</h3>
+          <p className="text-gray-700">
+            Para proteger los derechos tanto del arrendador (dueño) como del arrendatario (inquilino), inscribir un contrato de arriendo en una notaría de Loja es una decisión inteligente y estratégica. Este acto le otorga fecha cierta al contrato y lo hace oponible ante terceros, brindando una capa de seguridad legal crucial.
+          </p>
+          
+          <div className="bg-gray-50 p-6 rounded-lg">
+            <h4 className="text-xl font-semibold text-gray-900 mb-3">¿Por qué inscribir tu contrato?</h4>
+            <ul className="list-disc pl-5 text-gray-700 space-y-2">
+              <li>Protege al inquilino de un desalojo injustificado.</li>
+              <li>Protege al dueño en caso de incumplimiento de pago.</li>
+              <li>Es altamente recomendado para alquileres comerciales o de largo plazo.</li>
+              <li>Sirve como prueba legal sólida en cualquier disputa.</li>
+            </ul>
           </div>
-          
-          <p className="text-white mb-6">
-            Para proteger los derechos tanto del dueño como del inquilino, inscribir un contrato de arriendo en Loja es una decisión inteligente. Este acto le da validez y fecha cierta ante terceros, ofreciendo una capa extra de seguridad durante toda la vigencia del alquiler.
-          </p>
-          
-          <p className="text-gray-700 mb-6 font-medium">
-            Recomendado especialmente para alquileres comerciales o de largo plazo.
-          </p>
-          
-          <a 
-            href="/servicios/inscripcion-arriendo" 
-            className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-700 hover:bg-red-800 transition-colors duration-200"
-          >
+
+          <div className="mt-6">
+            <h4 className="text-lg font-semibold text-gray-900 mb-3">Requisitos:</h4>
+            <ul className="list-disc pl-5 text-gray-700 space-y-1">
+              <li>Presentar el contrato de arrendamiento por triplicado.</li>
+              <li>Cédulas de identidad del arrendador y del arrendatario.</li>
+            </ul>
+          </div>
+
+          <button className="mt-6 bg-red-700 hover:bg-red-800 text-white font-medium py-2 px-6 rounded transition duration-300">
             Detalles sobre Inscripción de Arriendos
-            <Key className="ml-2 h-5 w-5" />
-          </a>
-        </>
+          </button>
+        </div>
       )
     }
   ];
