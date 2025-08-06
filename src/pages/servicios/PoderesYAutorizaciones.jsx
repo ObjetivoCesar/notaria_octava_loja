@@ -1,8 +1,14 @@
 import React, { useEffect } from 'react';
-import { FileText, FileCheck, Plane, FileX } from 'lucide-react';
+import { FileText, FileCheck, Plane, FileX, ChevronRight } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 import VerticalTabs from '@/components/VerticalTabs';
+import { motion } from 'framer-motion';
 
 const PoderesYAutorizaciones = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const tabs = [
     {
       id: 'poderes',
@@ -160,54 +166,98 @@ const PoderesYAutorizaciones = () => {
     }
   ];
 
-  useEffect(() => {
-    document.title = 'Poderes y Autorizaciones | Notaría 8';
-  }, []);
+
 
   return (
-    <div className="min-h-screen">
-      {/* Hero Section */}
-      <div className="relative h-[500px] w-full overflow-hidden">
+    <div className="pt-16">
+      <Helmet>
+        <title>Poderes y Autorizaciones | Notaría Octava de Loja</title>
+        <meta name="description" content="Poderes notariales, autorizaciones y trámites de salida del país. Realiza tus trámites legales con seguridad y respaldo profesional en Loja." />
+        <link rel="canonical" href="https://notaria-octava-loja.vercel.app/servicios/poderes-y-autorizaciones" />
+      </Helmet>
+
+      {/* Hero Section with Dark Overlay */}
+      <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
+          className="absolute inset-0 bg-cover bg-center z-0"
           style={{
             backgroundImage: 'url(/images/portada.jpeg)',
-            backgroundAttachment: 'fixed',
             backgroundPosition: 'center',
             backgroundSize: 'cover'
           }}
-        >
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-            <div className="text-center px-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-                Poderes y Autorizaciones
-              </h1>
-              <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto">
-                Delega con total seguridad y respaldo legal
-              </p>
+        />
+        
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/50 z-1"></div>
+        
+        {/* Content */}
+        <div className="container-max text-center relative z-10 px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="max-w-4xl mx-auto text-white"
+          >
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              Poderes Notariales y Autorizaciones
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto">
+              Delega responsabilidades con total confianza y seguridad jurídica
+            </p>
+          </motion.div>
+        </div>
+      </section>
+      
+      {/* Parallax Background Section - Same as Vehiculos.jsx */}
+      <div className="relative h-[600px] overflow-hidden">
+        <div 
+          className="absolute inset-0 w-full h-full"
+          style={{
+            backgroundImage: 'url(/images/portada1.jpg)',
+            backgroundAttachment: 'fixed',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            zIndex: 0
+          }}
+        ></div>
+      </div>
+
+      {/* Vertical Tabs Section */}
+      <div id="tabs" className="bg-gray-50 py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <VerticalTabs tabs={tabs} />
+        </div>
+      </div>
+
+      {/* CTA Section */}
+      <div className="bg-white">
+        <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8">
+          <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            <span className="block">¿Listo para realizar tu trámite?</span>
+            <span className="block text-red-700">Contáctanos hoy mismo.</span>
+          </h2>
+          <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+            <div className="inline-flex rounded-md shadow">
+              <a
+                href="/contacto"
+                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-700 hover:bg-red-800 transition-colors duration-200"
+              >
+                Contáctanos
+              </a>
+            </div>
+            <div className="ml-3 inline-flex rounded-md shadow">
+              <a
+                href="tel:072570000"
+                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-red-700 bg-white hover:bg-gray-50 transition-colors duration-200"
+              >
+                Llamar ahora
+              </a>
             </div>
           </div>
         </div>
       </div>
-
-      {/* Main Content */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center mb-12">
-            <p className="text-lg text-gray-700 leading-relaxed mb-8">
-              Hay momentos en que no puedes estar presente para firmar un contrato, gestionar un trámite o acompañar a tus hijos en un viaje, pero tus asuntos importantes no pueden esperar.
-            </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              En la Notaría Octava de Loja, te asesoramos para que elijas y redactes el documento exacto que necesitas, protegiendo tus intereses y asegurando que tus instrucciones se cumplan al pie de la letra.
-            </p>
-          </div>
-          
-          {/* Vertical Tabs */}
-          <div className="max-w-6xl mx-auto">
-            <VerticalTabs tabs={tabs} />
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
